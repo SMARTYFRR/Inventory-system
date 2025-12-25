@@ -46,3 +46,18 @@ inventory_system/
 │
 └── database/
     └── setup.sql
+```
+
+---
+
+## 🛠️ Tech Stack
+
+- Language: Python
+- Database: MySQL
+- Connector: mysql-connector-python
+
+Install dependencies
+
+```bash
+pip install mysql-connector-python
+```
