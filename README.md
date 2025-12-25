@@ -1,25 +1,41 @@
-📦 Inventory Management System (Python + MySQL)
+# 📦 Inventory Management System  
+### Python × MySQL · CLI Based
 
-A simple and beginner-friendly Inventory Management System built using Python and MySQL.
-This project lets users manage items by adding, viewing, updating, deleting, and searching records stored inside a MySQL database.
+A clean, beginner-friendly **Inventory Management System** built with **Python** and **MySQL**.  
+No GUI. No fluff. Just logic, databases, and vibes.
 
-🚀 Features
+Manage items directly from the terminal like a real dev 😤
 
-Add new items to inventory
+---
 
-View all items
+## ✨ What this does
 
-Update item quantity
+This project lets you manage inventory records stored in a MySQL database.  
+You can add, view, update, delete, and search items — all from a simple CLI menu.
 
-Delete items
+Built to learn:
+- Python–MySQL connectivity  
+- CRUD operations  
+- Modular code structure  
+- Real-world database flow  
 
-Search items by name
+---
 
-Uses MySQL database for storing data
+## 🚀 Features
 
-Clean modular code (easy to understand)
+- ➕ Add new inventory items  
+- 📋 View all items  
+- 🔄 Update item quantity  
+- ❌ Delete items  
+- 🔍 Search items by name  
+- 🗄️ MySQL-backed storage  
+- 🧠 Beginner-readable code  
 
+---
 
+## 🗂️ Folder Structure
+
+```bash
 inventory_system/
 │
 ├── main.py
@@ -30,57 +46,3 @@ inventory_system/
 │
 └── database/
     └── setup.sql
-
-
-🛠️ Requirements
-
-Python 3.x
-
-MySQL Server & MySQL Workbench
-
-MySQL Connector for Python
-
-Install MySQL connector using: pip install mysql-connector-python
-
-🗄️ Database Setup
-
-Run the SQL script inside database/setup.sql.
-
-It will automatically:
-
-Create the database inventory_db
-
-Create the table items
-
-
-SQL structure:
-CREATE DATABASE IF NOT EXISTS inventory_db;
-
-USE inventory_db;
-
-CREATE TABLE IF NOT EXISTS items (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100),
-    quantity INT,
-    price FLOAT
-);
-
-🔧 Configure Database Connection
-
-Inside src/db_connection.py, update your MySQL password: password="your_password_here"
-
-
-Running the Program
-
-Open terminal inside the project folder and run: python main.py
-This will open the CLI menu
-Choose any option by typing its number.
-
-🤝 Contribution
-
-This is a simple educational project.
-Feel free to fork and add new features.
-
-📜 License
-
-This project is open-source and free to use.
